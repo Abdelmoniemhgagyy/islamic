@@ -1,0 +1,99 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    direction:rtl;
+}
+
+.container {
+    width:80%;
+    margin:50px auto ;
+    text-align: center;
+   
+}
+
+.container .title {
+    color: greenyellow;
+    border-bottom: 2px solid greenyellow;
+    width: 100px;
+    margin: 0 auto ;
+    position: relative;
+}
+
+.container .title::after{
+    content:"";
+    width: 60px;
+    height: 2px;
+    background-color: greenyellow;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-11px; 
+}
+.container .title::before{
+    content:"";
+    width: 40px;
+    height: 2px;
+    background-color: greenyellow;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-20px;
+}
+
+.content-adkar {
+    width:90%;
+    min-height:80px ;
+    margin:10px auto 10px;
+    border-radius: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    /* box-shadow: 0 0 20px greenyellow,0 0 20px rgb(90, 106, 245);  */
+   
+   
+
+}
+.text-adkar {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-adkar .nas {
+    font-size: 24px;
+    padding: 30px 0;
+    line-height: 1.6;
+    letter-spacing: 1px;
+   
+}
+
+
+
+.btn{
+    margin-top: 0px;
+padding: 5px;
+border: none;
+outline: none;
+border-radius: 6px;
+font-size: 20px;
+background-color: black;
+color: white;
+cursor: pointer;
+}
+
+.number{
+    background-color: greenyellow;
+    padding: 10px;
+    color: rgb(49, 0, 114);
+    font-weight: bolder;
+    
+}

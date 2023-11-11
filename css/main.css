@@ -1,0 +1,147 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+background-image: url(../images/1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.nav{
+    background-color: #325b5f5e;
+    height: 60px;
+    margin-top: 15px;
+    
+
+}
+ul{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+     margin-top: 10px;
+    padding: 10px;
+}
+ul li{
+    margin: 0 10px;
+    padding: 0px
+}
+
+ul li a{
+    color:#fff;
+    font-weight: 700;
+}
+
+ul li:hover a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+   text-shadow: 2px 2px 5px black;
+    
+    
+}
+
+button{
+    
+    border: none;
+    background: transparent;
+    font-size: 23px;
+    height: fit-content;
+    display: none;
+    border: none;
+    outline: none;
+    
+}
+
+
+
+/* -----------------squars--------------- */
+.elements{
+margin: 13% auto;
+}
+
+.element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    margin: 15px 8px;
+    background-color: #325b5f;
+    color: #fff;
+    box-shadow: 0px 0px 65px #fdfdfd;
+    text-align: center;
+    border-radius: 31px;
+    line-height: 1.6;
+}
+.element:hover{
+    transform: scale(1.1);
+    background-color: #5aa8af;
+}
+.element h3 {
+    font-size: 18px;
+}
+.element h3 a{
+    color: #fff;
+    text-decoration: none;
+}
+.element p{
+display: none;
+    color: #ddd0d0;
+}
+
+/* ----------------------------------- */
+
+@media (max-width:560px){
+    .nav{
+       background-color:transparent ;
+       
+       
+    }
+    ul{
+        flex-direction: column;
+        height: 100%;
+       margin-top: 87px;
+       display: none;
+        
+    }
+ 
+    ul li{
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+    }
+    ul li:hover {
+        background-color: #636161;
+        text-decoration: none;
+    }
+    button{
+        display: flex;
+        margin: -9px -7px;
+    }
+    button:hover{
+        color:#fff
+    }
+
+    .active{
+        display: flex;
+    }
+    .elements{
+        margin: 0 auto;
+      
+    }
+    .martop{
+        margin: 128px auto;
+    }
+    .element{
+        margin: 17px auto;
+    }
+}

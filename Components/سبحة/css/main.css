@@ -1,0 +1,101 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  video{
+ display: none;
+  }
+body{
+    direction:rtl;
+}
+
+button span{
+    position: absolute;
+    left: -4px;
+    top: -16px;
+}
+
+.btn{
+    width:120px;
+    height:120px;
+    background-color: black;
+    color: white;
+    border-radius:50%;
+    font-size: 20px;
+    cursor:pointer;
+    
+    
+}
+.x{
+    margin: 1.5rem auto
+}
+ .text{
+    position: relative;
+    margin: 43px auto;
+    
+    
+}
+ .return {
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #f14af2;
+    position: absolute;
+    top: 3px;
+    right: -6px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.text p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-size: 18px;
+    margin: 10px auto;
+    white-space:nowrap;
+    font-weight: bold;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 4px;
+}
+@media (max-width:600px){
+    .text {
+        margin: 63px auto ;
+    }
+
+    .text p {
+        white-space:wrap;
+        line-height: 2;
+        margin: 10px auto ;
+        width:inherit
+    }
+    .abdelrhman,.aya{
+        font-size: 24px;
+    }
+    video{
+        display: block;
+        position:sticky;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+         z-index: -1; 
+         margin: 211px auto;
+      }
+      video::after{
+        content:"";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+
+      }
+}

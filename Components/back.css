@@ -1,0 +1,25 @@
+.back {
+    position: absolute;
+    top: 28px;
+    left: 15px;
+    font-size: 30px;
+    z-index: 2;
+}
+.back:hover{
+    transform: scale(1.1);
+}
+.q {
+    top: 12px;
+    left: 28px;
+    color: rgb(13 165 0);
+}
+.h{
+    top: 15px;
+    left: 24px;
+    color: #fff;
+}
+.a{
+    top: 15px;
+    left: 22px;
+}
+
