@@ -4,7 +4,7 @@ quran()
 
 function  quran(){
 
- fetch("http://api.alquran.cloud/v1/meta")
+ fetch("https://api.alquran.cloud/v1/meta")
 
     .then( async (res) => await res.json())
     .then((data) => {
@@ -26,7 +26,7 @@ function  quran(){
         box.forEach((title,index) =>{
             title.addEventListener("click",()=>{
                 // https://api.quran.gading.dev/surah/18
-                fetch(`http://api.alquran.cloud/v1/surah/${index + 1}`)
+                fetch(`https://api.alquran.cloud/v1/surah/${index + 1}`)
                 .then(response => response.json())
                 .then(data => {
                     console.log(data)
